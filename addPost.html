@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <html>
+        <head lang="en">
+            <meta charset="utf-8">
+            <title>Zi Yen Chang</title>
+            <link rel="icon" type="image/x-icon" href="ziyenlogo.png" />
+            <link rel="stylesheet" href="reset.css" type="text/css"/>
+            <link rel="stylesheet" href="addPost.css" type="text/css"/> 
+        </head>
+
+        <body>
+            <div id="addPost">
+                <h1>Add Blog</h1>
+                <form action="addPost.php" method="POST" name="login" id="post">
+                    <!-- title area -->
+                    <input type="text" name="title" id="ftitle" placeholder="Title" maxlength="120" ><br>
+                    <!-- text area -->
+                    <textarea placeholder="Enter your text here" name="post" id="fpost"  ></textarea><br>
+                    <!-- "Post" button-->
+                    <input id="sub" type="submit" value="Post" onclick="empty(event)">
+                    <!-- "Clear button" -->
+                    <input id="clear" type="reset" value="Clear" onclick="return cleartext()">
+                    <!-- preview button -->
+                    <button type="button" id="pre" onclick="empty(event)">Preview</button>
+                </form>  
+            </div>
+
+            <div id="previewPost">
+                <form action="preview.php" method="POST" name="login" id="prepost">
+                    <!-- title area -->
+                    <input type="text" placeholder="Title" maxlength="120" id="pretitle" name="pretitle"><br>
+                    <!-- text area -->
+                    <textarea placeholder="Enter your text here" id="precon" name="precon" ></textarea><br>
+                    <!-- "Post" button-->
+                    <input id="preview" type="submit" value="Preview">
+                </form>
+            </div>
+
+            <!-- JavaScript code for alert box when press "Clear" button -->
+            <script>
+                document.getElementById("sub").addEventListener("click", function(event){
+                event.preventDefault()});
+                document.getElementById("preview").addEventListener("click", function(event){
+                event.preventDefault()});
+
+                function empty(a){
+                    var x = document.getElementById("ftitle");
+                    var y = document.getElementById("fpost");
+                    //if both field have values
+                    if(!x.value=="" && !y.value == ""){
+                        //if preview is clicked
+                        if(a.target.getAttribute("id") =="pre"){
+                            document.getElementById("pretitle").value = document.getElementById("ftitle").value;
+                            document.getElementById("precon").value = document.getElementById("fpost").value;
+                            document.getElementById("prepost").submit();
+                        }
+                        //Post button is clicked
+                        else{
+                            document.getElementById("post").submit();
+                        }
+                    }
+                    if(x.value == "" ){
+                        x.className += " empty";
+                    }
+                    else{
+                        x.className = "";
+                    }
+                    if(y.value == "" ){
+                    y.className += " empty";
+                    }
+                    else{
+                        y.className = "";
+                    }
+                }
+
+                function cleartext(){
+                    var x = document.getElementById("ftitle");
+                    var y = document.getElementById("fpost");
+
+                    if (confirm("Are you sure you want to clear all text?")){
+                        y.className = "";
+                        x.className = "";
+                        return true;
+                    }
+                    return false;
+                }
+
+            </script>
+        </body>
+    </html>

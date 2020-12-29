@@ -1,0 +1,458 @@
+/* set font for whole website */
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* NAVIGATION BAR STARTS */
+
+    /* Bar position and colour */
+        nav{
+            position: fixed; 
+            top: 0;
+            width: 100%;
+            background-color: rgb(243, 239, 224);
+            text-align: center;
+        }
+
+    /* link position and size */
+        nav a{
+            display: block;
+            float: left;
+            padding: 1em 1.5em;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+
+    /* icon for responsive design */
+        nav .icon {
+            display: none;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+    /* welcome user after login */
+        #welcome{
+            position: absolute;
+            right: 1em;
+            padding: 0.5em 0 0.5em 0.5em;
+            font-size: 20px;
+            background-color: rgb(243, 239, 224);
+            color: black;
+            letter-spacing: normal;
+        }
+
+    /* welcome user after login responsive design */
+        #welcome1{
+            position: absolute;
+            right: 1em;
+            padding: 0 0 0.5em 0.5em;
+            font-size: 18px;
+            background-color: unset;
+            color: black;
+            letter-spacing: normal;
+        }
+
+/* NAVIGATION BAR ENDS */
+
+/* HOME STARTS */
+        
+    /* background image */
+        #homep{
+            text-align: center;
+            background-image: url("headerbg.png");
+            min-height: 100vh;
+            background-attachment: scroll;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    /* Logo position */
+        #logo{
+            width: 100px;
+            padding-top: 30vh;
+        }
+
+    /* Name design */
+    h1{
+        font-size: 100px;
+        color: rgb(175, 81, 102);
+        text-align: center;
+    }
+
+    /* Name first alphabet colour */
+        em{
+            font-style: normal;
+            color: black;
+        }
+
+    /* Student text design */
+        h2{
+            font-size: 30px;
+            color: rgb(247, 174, 194);
+        }
+
+/* HOME ENDS */
+    
+
+/* TOPICS START */
+    /* Whole content bg and layout*/
+        article{
+            text-align: center;
+            margin: 0 auto;
+            padding-bottom: 1em;
+            background-image: url("pinkblock.png");
+            background-attachment: scroll;
+            background-repeat: repeat;
+        }
+
+    /* each topic container */
+        section{
+            border-bottom: rgb(175, 81, 102) solid 2px;
+            margin: 0 20%;
+            padding-top: 8em;
+        }
+
+    /* Each topic title design */
+        h3{
+            font-size:40px;
+            letter-spacing: 10px;
+            text-align: center;
+            padding: 0.5em;
+            display: table;
+            background-color: rgb(175, 81, 102);
+            color: rgb(238, 237, 231);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    /* Subtopic for - (Skills and Achievements),(Experience*2) */
+        h4{
+            font-size:30px;
+            letter-spacing: 3px;
+            padding: 0 1em 0.3em 1em;
+            color: rgb(175, 81, 102);
+            text-align: left;
+            line-height: 1.2;
+            border-bottom: rgb(175, 81, 102) 1px solid;
+        }
+
+    /* second and subsequent subtopic for each section */
+        .sub{
+            margin-top: 2em;
+        }
+
+    /* content design - without including h3(topic) */
+        .content{
+            font-size: 16px;
+            margin: 1em 0 1em 0em;
+            padding: 1em 3em 3em 3em;
+            line-height: 2;
+            text-align: justify;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+    /* design for every paragraph text */
+        p{
+            display: table;
+        }
+    
+    /* title in subtopic */
+        h5{
+            font-size: 18px;
+            line-height: 1.2;
+            margin-top: 1em;
+            letter-spacing: 1px;
+            color: rgb(175, 81, 102);
+        }
+
+    /* design for all table - skills and education */
+        table{
+            text-align: left;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 1em;
+        }
+
+    /* design for table header */
+        th{
+            padding: 1em;
+            vertical-align: middle;
+            border: white 1px solid;
+        }
+        
+    /* Image of about me section */
+        #abtziyen{
+            width: 70%;
+            margin-top: 2em;
+        }
+
+    /* table cell design for skill table */
+        #skill td{
+            text-align: center;
+            border: white 1px solid;
+            padding: 0.5em;
+        }
+
+    /* space before Achievements collapsible content and shadow */
+        #achieve{
+            margin-top: 1em;
+            box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+        } 
+
+    /* achievement collapsible button design */
+        .collapsible {
+            background-color: rgb(250, 223, 230);
+            color: black;
+            cursor: pointer;
+            padding: 1em;
+            width: 100%;
+            outline: none;
+            font-size: 17px;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    
+     /* achievement collapsible button colour when hover */
+        .collapsible:hover {
+            background-color: rgb(243, 239, 224);
+        }
+        
+    /* Content in achievement collapsible button before click */
+        .colcontent {
+            padding: 0 2em 1em 2em;
+            text-align: left;
+            display: none;
+            overflow: hidden;
+            border: rgb(243, 239, 224) 2px solid;
+        }
+
+    /* table cell design for education table */
+        #edu td{
+            text-align: left;
+            padding: 0.5em;
+            border: white 1px solid;
+            vertical-align: middle;
+        }
+
+    /* updated date below education table */
+        #update{
+            font-size: 15px;
+            color: rgb(175, 81, 102);
+        }
+
+    /* portfolio link display */
+        .imglink{
+            margin: 3em auto;
+            display: block;
+            width: 70%;
+            text-align: center;
+        }
+
+    /* design when hover portfolio link */
+        .imglink:hover{
+            background-color: rgb(245, 238, 214);
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+            color: black;
+        }
+    /* image link in Portfolio */
+        figure img{
+            padding: 1em;
+            width: 85%;
+        }
+
+    /* figcaption */
+        figcaption{
+            padding-bottom: 1em;
+        }
+
+
+    /* contact section space for image */
+        #contact{
+            padding-bottom: 200px;
+        }
+
+    /* image design for contact section */
+        #cntziyen{
+            height: 360px;
+            float: right;
+            margin-top: 4em;
+            margin-right: 4em;
+        }
+
+    /* contact section context - without h3 and img */
+        #contact .content{
+            margin: 4em 0 4em 6em;
+        }
+
+    /* name in context section */
+        #contact h5{
+            font-size: 40px;
+            margin-bottom: 1em;
+            color: black;
+        }
+
+    /* position pfemail logo before email address */
+        #email{
+            width: 30px;
+            float: left;
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+
+/* TOPICS END */
+
+
+/* FOOTER STARTS */
+    /* design for whole footer part */
+        footer{
+            background-color: rgb(243, 239, 224);
+            padding: 2em;
+            color: rgb(175, 81, 102);
+        }
+
+    /* design for back to top link button */
+        footer a{
+            text-decoration: none;
+            background-color: rgb(245, 229, 229);
+            padding: 1em 2em;
+            text-align: center;
+            display: table;
+            margin: 0 auto;
+            font-weight: bold;
+            letter-spacing: 5px;
+            font-size: 30px;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+        } 
+
+    
+
+    /* position of copyright text */
+        #copyright{
+            margin-top: 3em;
+        }
+
+/* FOOTER ENDS */
+
+
+
+/* links start */
+
+    a:link{
+        color: rgb(175, 81, 102);
+    }
+
+    a:visited {
+        color: rgb(175, 81, 102);
+    }
+
+    a:hover {
+        color:rgb(247, 174, 194);
+        background-color: rgb(175, 81, 102);
+    }
+
+/* links end */
+
+
+
+/* responsive design */
+
+@media only screen and (min-width: 1271px) and (max-width: 1295px){
+    /* position of welcome user when login */
+        #welcome{
+            right: 0;
+            padding-right: 2px;
+            padding-top: 0.7em;
+            font-size: 18px;
+        }
+}
+
+@media only screen and (max-width: 1270px){
+    /* position of welcome user when login */
+        #welcome{
+            right: 0;
+            top: 2em;
+            padding-right: 2px;
+            padding-top: 0.7em;
+            font-size: 18px;
+        }
+
+    /* image position for contact section */
+        #cntziyen{
+            float: none;
+            margin: 2em 0 0 0;
+        }
+
+    /* contact section context position - without h3 and img */
+        #contact .content{
+            margin: 0;
+            text-align: center;
+        }
+
+    /* contact section space */
+        #contact{
+            padding-bottom: 3em; 
+        }
+}
+
+
+@media only screen and (max-width: 800px){
+    /* normal version of welcome user disappear */
+        #welcome{
+            display: none;
+        }
+
+    /* Each topic title text size */
+        h3{
+            font-size: 30px;
+        }
+
+    /* text size of Subtopic for - (Skills and Achievements),(Experience*2) */
+        h4{
+            font-size: 25px;
+        }
+
+    /* navigation bar links disappear */
+        nav a{
+            display: none;
+        }
+        
+    /* show navigation menu icon */
+        nav a.icon {
+            float: none;
+            text-align: left;
+            padding: 0.5em;
+            padding-left: 2em;
+            display: block;
+        }
+    
+    /* show navigation links when click */
+        nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        }
+
+    /* size for content text */
+        .content{
+            font-size: 15px;
+        }
+
+    /* margin of each topic */
+        section{
+            margin: 0 8%;
+        }
+
+    /* text size for back to top link button */
+        footer a{
+            font-size: 25px;
+        }
+
+}
+
+
+
+
+

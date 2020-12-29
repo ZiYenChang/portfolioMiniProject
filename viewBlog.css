@@ -1,0 +1,304 @@
+/* set font for whole website */
+body{
+    background-image: url("pinkblock.png");
+    background-attachment: scroll;
+    background-repeat: repeat;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* NAVIGATION BAR STARTS */
+
+    /* Bar position and colour */
+    nav{
+        position: fixed; 
+        top: 0;
+        width: 100%;
+        background-color: rgb(243, 239, 224);
+        text-align: center;
+    }
+
+/* link position and size */
+    nav a{
+        display: block;
+        float: left;
+        padding: 1em 1.5em;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+
+/* icon for responsive design */
+    nav .icon {
+        display: none;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+/* welcome user after login */
+    #welcome{
+        position: absolute;
+        right: 1em;
+        padding: 0.5em 0 0.5em 0.5em;
+        font-size: 20px;
+        background-color: rgb(243, 239, 224);
+        color: black;
+        letter-spacing: normal;
+    }
+
+/* welcome user after login responsive design */
+    #welcome1{
+        position: absolute;
+        right: 1em;
+        padding: 0 0 0.5em 0.5em;
+        font-size: 18px;
+        background-color: unset;
+        color: black;
+        letter-spacing: normal;
+    }
+
+/* NAVIGATION BAR ENDS */
+
+
+/* links start */
+
+a:link{
+    color: rgb(175, 81, 102);
+}
+
+a:visited {
+    color: rgb(175, 81, 102);
+}
+
+a:hover {
+    color:rgb(247, 174, 194);
+    background-color: rgb(175, 81, 102);
+}
+
+/* links end */
+
+/* BLOG STARTS */
+
+    /* margin for whole blog post */
+    article{
+        margin: 0 20%;
+    }
+
+    /* Blog topic design */
+        h1{
+            margin-top: 18vh;
+            font-size:40px;
+            letter-spacing: 10px;
+            text-align: center;
+            display: table;
+            background-color: rgb(175, 81, 102);
+            color: rgb(238, 237, 231);
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0.5em;
+        }
+
+    /* add post button design */
+        .login{
+            text-decoration: none;
+            text-align: center;
+            margin: 1em;
+            padding: 0.5em;
+            display: inline-block;
+            background-color: rgb(243, 239, 224);
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+        }
+
+    /* add post button position */
+        .log{
+            text-align: center;
+        }
+
+    /* year design */
+    .year{
+        font-size: 35px;
+        padding: 0.3em 0 0 0;
+        color: black;
+        text-align: center;
+        letter-spacing: 2px;
+        text-decoration: underline;
+        text-decoration-color: rgb(245, 229, 229);
+    }
+
+    /* month design */
+    h3{
+        font-size: 20px;
+        text-align: center;
+        margin: 0.7em 0;
+    }
+
+    /* toggle button */
+    h3 span{
+        cursor: pointer;
+    }
+    h3 span:hover{
+        color: rgb(175, 81, 102);
+    }
+
+    /* position and size for time of each post */
+        .time{
+            text-align: right;
+            font-size: 13px;
+        }
+
+    /* design for each post title */
+        h2{
+            font-size:25px;
+            text-align: left;
+            padding-top: 0.2em;
+            color: rgb(175, 81, 102);
+        }
+    
+    /* post content design */
+        .content{
+            padding: 0.5em 0;
+            text-align: justify;
+        }
+
+    /* seperation line for each post */
+        .line{
+            border: white 2px solid;
+            margin: 1em 0;
+        }
+
+/* BLOG ENDS */
+
+/* hidden form */
+    #pretitle{
+        color: rgb(175, 81, 102);
+        font-style: italic;
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 2px;
+        margin-top: 1em;
+    }
+    
+    #previewPost{
+        display: none;
+    }
+
+    #select{
+        text-align: center;
+    }
+
+    button{
+        cursor: pointer;
+        padding: 1em 2em;
+        margin: 0 0.5em;
+        background-color:rgb(249, 207, 208);
+        text-align: center;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
+    button:hover{
+        background-color:rgb(247, 174, 194);
+    }
+
+/* FOOTER STARTS */
+    /* design for whole footer part */
+    footer{
+        background-color: rgb(243, 239, 224);
+        padding: 2em;
+        color: rgb(175, 81, 102);
+    }
+
+/* design for back to top link button */
+    footer a{
+        text-decoration: none;
+        background-color: rgb(245, 229, 229);
+        padding: 1em 2em;
+        text-align: center;
+        display: table;
+        margin: 0 auto;
+        font-weight: bold;
+        letter-spacing: 5px;
+        font-size: 30px;
+        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    }
+
+
+/* position of copyright text */
+    #copyright{
+        margin-top: 3em;
+    }
+
+/* FOOTER ENDS */
+
+
+@media only screen and (min-width: 1271px) and (max-width: 1295px){
+    /* position of welcome user when login */
+        #welcome{
+            right: 0;
+            padding-right: 2px;
+            padding-top: 0.7em;
+            font-size: 18px;
+        }
+}
+
+
+@media only screen and (max-width: 1270px){
+    /* position of welcome user when login */
+        #welcome{
+            right: 0;
+            top: 2em;
+            padding-right: 2px;
+            padding-top: 0.7em;
+            font-size: 18px;
+        }
+}
+
+
+@media only screen and (max-width: 800px){
+    /* normal version of welcome user disappear */
+        #welcome{
+            display: none;
+        }
+
+    /* Blog topic text size */
+        h1{
+            font-size: 30px;
+        }
+
+    /* navigation bar links disappear */
+        nav a{
+            display: none;
+        }
+
+    /* show navigation menu icon */
+        nav a.icon {
+            float: none;
+            text-align: left;
+            padding: 0.5em;
+            padding-left: 2em;
+            display: block;
+        }
+  
+
+    /* show navigation links when click */
+    nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        }
+
+    /* size for content text */
+        .content{
+            font-size: 15px;
+        }
+
+    /* margin for blog post */
+    article{
+        margin: 0 8%;
+    }
+
+    /* text size for back to top link button */
+    footer a{
+        font-size: 25px;
+    }
+
+}

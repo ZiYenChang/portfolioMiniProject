@@ -1,0 +1,79 @@
+/* set bg for whole website */
+    body{
+        text-align: center;
+        background-image: url("pinkblock.png");
+        background-attachment: scroll;
+        background-repeat: repeat;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+/* position for whole add post box */
+    #addPost{
+        margin-top: 20vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding: 2em;
+        background-color: rgb(243, 239, 224);
+    }
+
+/* add post title */
+    h1{
+        font-size: 50px;
+        padding-bottom: 0.5em;
+        color: rgb(175, 81, 102);
+    }
+
+/* design for typing area */
+    input, textarea, button{
+        padding: 1em;
+        margin-bottom: 1em;
+        width: 80%;
+        font-size: 16px;
+        border: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+/* height of post content */
+    textarea{
+        height: 7em;
+        resize: none;
+    }
+
+/* button design */
+    #clear, #sub, #pre{
+        display: inline-block;
+        cursor: pointer;
+        width: 25%;
+        margin: 0 0.5em;
+        background-color:rgb(249, 207, 208);
+        text-align: center;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+        
+    }
+
+    /* hidden for preview */
+    #previewPost{
+        display: none;
+    }
+
+    /* #pre{
+        cursor: pointer;
+        width: 30%;
+        margin: 0 1em;
+        background-color:rgb(249, 207, 208);
+        padding: 1em;
+        margin-bottom: 1em;
+    } */
+
+
+    
+/* button bg color when hover */
+    #sub:hover, #clear:hover, #pre:hover{
+        background-color:rgb(247, 174, 194);
+    }
+
+    .empty{
+        background-color: rgb(247, 174, 194);
+    }
+
